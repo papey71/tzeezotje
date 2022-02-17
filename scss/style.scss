@@ -1,0 +1,310 @@
+@import "_nullstyle";
+@import "_header";
+@import "_slider";
+
+.popup__connection {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    .container {
+        .popup__area {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .popup__body {
+            position: relative;
+            left: 368 / 1920 * 100vw;
+            top: 491 / 1920 * 100vw;
+            width: 321 / 1920 * 100vw;
+            height: 483 / 1920 * 100vw;
+            background-color: #ffffff;
+            box-shadow: 0px 4 / 1920 * 100vw 20 / 1920 * 100vw rgba(0, 0, 0, 0.15);
+            z-index: 2;
+            h1 {
+                padding-top: 20 / 1920 * 100vw;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18 / 1920 * 100vw;
+                text-align: center;
+                color: #000000;
+            }
+            form {
+                margin: 0 auto;
+                margin-top: 12 / 1920 * 100vw;
+                width: 283 / 1920 * 100vw;
+                p {
+                    margin-bottom: 5 / 1920 * 100vw;
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16 / 1920 * 100vw;
+                    color: #000000;
+                }
+                input {
+                    margin-bottom: 10 / 1920 * 100vw;
+                    width: 255 / 1920 * 100vw;
+                    padding: 12 / 1920 * 100vw 13 / 1920 * 100vw;
+                    border: 1 / 1920 * 100vw solid #cccccc;
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16 / 1920 * 100vw;
+                    color: #808080;
+                }
+                .textarea__label {
+                    margin-top: 10 / 1920 * 100vw;
+                }
+                textarea {
+                    margin-bottom: 10 / 1920 * 100vw;
+                    width: 255 / 1920 * 100vw;
+                    height: 78 / 1920 * 100vw;
+                    padding: 12 / 1920 * 100vw 13 / 1920 * 100vw;
+                    border: 1 / 1920 * 100vw solid #cccccc;
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16 / 1920 * 100vw;
+                    color: #808080;
+                    resize: none;
+                }
+                .send-form {
+                    display: block;
+                    margin-top: 7 / 1920 * 100vw;
+                    padding: 18 / 1920 * 100vw 78 / 1920 * 100vw 17 / 1920 * 100vw 95 / 1920 * 100vw;
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18 / 1920 * 100vw;
+                    color: #ffffff;
+                    background-color: #3a4574;
+                    border: none;
+                    border-right: 17 / 1920 * 100vw solid #505f9e;
+                    transition: 0.14s;
+                    &:active {
+                        background-color: #505f9e;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu {
+    .container {
+        display: flex;
+        padding-top: 80 / 1920 * 100vw;
+        margin: 0 auto;
+        width: 1170 / 1920 * 100vw;
+        div {
+            .point {
+                h1 {
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24 / 1920 * 100vw;
+                    color: #000000;
+                }
+                div {
+                    display: flex;
+                    margin-top: 10 / 1920 * 100vw;
+                    p {
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18 / 1920 * 100vw;
+                        line-height: 32 / 1920 * 100vw;
+                        color: #000000;
+                    }
+                    img {
+                        margin: 13 / 1920 * 100vw 12 / 1920 * 100vw 0px 12 / 1920 * 100vw;
+                        width: 39 / 1920 * 100vw;
+                        height: 5 / 1920 * 100vw;
+                    }
+                }
+            }
+            .menu__line {
+                margin: 20 / 1920 * 100vw 0px 20 / 1920 * 100vw 0px;
+                width: 469 / 1920 * 100vw;
+                height: 1 / 1920 * 100vw;
+                background-color: #e7e7e7;
+            }
+        }
+        .menu__img {
+            margin-left: 32 / 1920 * 100vw;
+            width: 668 / 1920 * 100vw;
+            height: 638 / 1920 * 100vw;
+        }
+    }
+}
+.block__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+}
+
+@media (max-width: 575px) {
+    .popup__connection {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        &:target {
+            opacity: 1;
+            visibility: visible;
+        }
+        .container {
+            .popup__area {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .popup__body {
+                position: relative;
+                left: 28 / 575 * 100vw;
+                top: 285 / 575 * 100vw;
+                width: 321 / 575 * 100vw;
+                height: 483 / 575 * 100vw;
+                background-color: #ffffff;
+                box-shadow: 0px 4 / 575 * 100vw 20 / 575 * 100vw rgba(0, 0, 0, 0.15);
+                z-index: 2;
+                h1 {
+                    padding-top: 20 / 575 * 100vw;
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18 / 575 * 100vw;
+                    text-align: center;
+                    color: #000000;
+                }
+                form {
+                    margin: 0 auto;
+                    margin-top: 12 / 575 * 100vw;
+                    width: 283 / 575 * 100vw;
+                    p {
+                        margin-bottom: 5 / 575 * 100vw;
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16 / 575 * 100vw;
+                        color: #000000;
+                    }
+                    input {
+                        margin-bottom: 10 / 575 * 100vw;
+                        width: 255 / 575 * 100vw;
+                        padding: 12 / 575 * 100vw 13 / 575 * 100vw;
+                        border: 1 / 575 * 100vw solid #cccccc;
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16 / 575 * 100vw;
+                        color: #808080;
+                    }
+                    .textarea__label {
+                        margin-top: 10 / 575 * 100vw;
+                    }
+                    textarea {
+                        margin-bottom: 10 / 575 * 100vw;
+                        width: 255 / 575 * 100vw;
+                        height: 78 / 575 * 100vw;
+                        padding: 12 / 575 * 100vw 13 / 575 * 100vw;
+                        border: 1 / 575 * 100vw solid #cccccc;
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16 / 575 * 100vw;
+                        color: #808080;
+                        resize: none;
+                    }
+                    .send-form {
+                        display: block;
+                        margin-top: 7 / 575 * 100vw;
+                        padding: 18 / 575 * 100vw 78 / 575 * 100vw 17 / 575 * 100vw 95 / 575 * 100vw;
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18 / 575 * 100vw;
+                        color: #ffffff;
+                        background-color: #3a4574;
+                        border: none;
+                        border-right: 17 / 575 * 100vw solid #505f9e;
+                        transition: 0.14s;
+                        &:active {
+                            background-color: #505f9e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu {
+        .container {
+            display: block;
+            padding-top: 66 / 575 * 100vw;
+            margin: 0 auto;
+            width: 520 / 575 * 100vw;
+            div {
+                .point {
+                    h1 {
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24 / 575 * 100vw;
+                        color: #000000;
+                    }
+                    div {
+                        display: flex;
+                        margin-top: 10 / 575 * 100vw;
+                        p {
+                            font-family: "Poppins";
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 18 / 575 * 100vw;
+                            line-height: 32 / 575 * 100vw;
+                            color: #000000;
+                        }
+                        img {
+                            margin: 13 / 575 * 100vw 12 / 575 * 100vw 0px 12 / 575 * 100vw;
+                            width: 39 / 575 * 100vw;
+                            height: 5 / 575 * 100vw;
+                        }
+                    }
+                }
+                .menu__line {
+                    margin: 20 / 575 * 100vw 0px 20 / 575 * 100vw 0px;
+                    width: 469 / 575 * 100vw;
+                    height: 1 / 575 * 100vw;
+                    background-color: #e7e7e7;
+                }
+            }
+            .menu__img {
+                margin: 66 / 575 * 100vw 0px 0px 48 / 575 * 100vw;
+                width: 423 / 575 * 100vw;
+                height: 404 / 575 * 100vw;
+            }
+        }
+    }
+}

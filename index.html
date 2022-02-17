@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="4faa6c0c6422d2ef" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Tzeezotje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="#">
+                    <img src="img/header-logo.png" class="header__logo" alt="">
+                </a>
+                <a href="#" class="header__menu">
+                    À la carte
+                </a>
+                <a href="#" class="header__menu">
+                    Wijnkaart
+                </a>
+                <a href="#" class="header__menu">
+                    Lunchmenu
+                </a>
+                <a href="#" class="header__menu margin-none">
+                    Contact
+                </a>
+                <img src="img/header-phone.svg" class="header__phone-img" alt="">
+                <a href="tel:+3292825725" class="header__phone">
+                    +32 9 282 57 25
+                </a>
+            </div>
+            <div class="header__mobile">
+                <a href="#popup__menu-burger" class="menu-burger">
+                    <img src="img/menu-burger.svg" alt="">
+                </a>
+                <a href="#" class="header__logo">
+                    <img src="img/header-logo.png" alt="">
+                </a>
+            </div>
+            <div class="contant">
+                <h2>
+                    OPEN EVERYDAY 6AM - 9PM
+                </h2>
+                <h1>
+                    A bad day with lunch is better than a good day without it.
+                </h1>
+                <div>
+                    <a href="#popup__connection" class="button">
+                        Reserve a table
+                    </a>
+                    <a href="#">
+                        <img src="img/header-fb.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/header-ig.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/header-tw.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/header-yt.svg" class="margin-none" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="popup__menu-burger" class="popup__menu-burger">
+        <div class="container">
+            <a href="#block-fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <a href="#block__fixed" class="popup__close">
+                    <img src="img/menu__cross.svg" alt="">
+                </a>
+                <div class="menu">
+                    <a href="#">
+                        À la carte
+                    </a>
+                    <a href="#">
+                        Wijnkaart
+                    </a>
+                    <a href="#">
+                        Lunchmenu
+                    </a>
+                    <a href="#">
+                        Contact
+                    </a>
+                </div>
+                <a href="tel:+3292825725" class="popup__phone">
+                    +32 9 282 57 25 <br>
+                </a>
+                <div class="social-net">
+                    <a href="#">
+                        <img src="img/header-fb-mobile.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/header-ig-mobile.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/header-tw-mobile.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/header-yt-mobile.svg" class="margin-none" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popup__connection" class="popup__connection">
+        <div class="container">
+            <a href="#block-fixed" class="popup__area"></a>
+            <div class="popup__body">
+                <h1>
+                    Reserve a table
+                </h1>
+                <form action="sender.php" method="post" id="myform">
+                    <p>
+                        Name
+                    </p>
+                    <input type="text" name="name" placeholder="Input your name*" required>
+                    <p>
+                        Telefoon
+                    </p>
+                    <input type="text" name="phone" class="phone" placeholder="Input your telefoon*" required>
+                    <p class="textarea__label">
+                        Speciale verzoeken
+                    </p>
+                    <textarea name="text" placeholder="Input your special verzoeken"></textarea>
+                    <button type="button" class="send-form">
+                        Behouden
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container">
+            <div>
+                <div class="point">
+                    <h1>
+                        Woensdag 12/01
+                    </h1>
+                    <div>
+                        <p>
+                            Salade met Serrano
+                        </p>
+                        <img src="img/menu-ellipse.svg" alt="">
+                        <p>
+                            Steak Tartaar
+                        </p>
+                    </div>
+                </div>
+                <div class="menu__line"></div>
+                <div class="point">
+                    <h1>
+                        Donderdag 13/01
+                    </h1>
+                    <div>
+                        <p>
+                            Toast Roquefort
+                        </p>
+                        <img src="img/menu-ellipse.svg" alt="">
+                        <p>
+                            Penne met Kip en Prei
+                        </p>
+                    </div>
+                </div>
+                <div class="menu__line"></div>
+                <div class="point">
+                    <h1>
+                        Vrijdag 14/01
+                    </h1>
+                    <div>
+                        <p>
+                            Verrassing van de Chef
+                        </p>
+                        <img src="img/menu-ellipse.svg" alt="">
+                        <p>
+                            Penne met Kip en Prei
+                        </p>
+                    </div>
+                </div>
+                <div class="menu__line"></div>
+                <div class="point">
+                    <h1>
+                        Vrijdag 15/01
+                    </h1>
+                    <div>
+                        <p>
+                            Verrassing van de Chef
+                        </p>
+                        <img src="img/menu-ellipse.svg" alt="">
+                        <p>
+                            Penne met Kip en Prei
+                        </p>
+                    </div>
+                </div>
+                <div class="menu__line"></div>
+                <div class="point">
+                    <h1>
+                        Vrijdag 16/01
+                    </h1>
+                    <div>
+                        <p>
+                            Verrassing van de Chef
+                        </p>
+                        <img src="img/menu-ellipse.svg" alt="">
+                        <p>
+                            Penne met Kip en Prei
+                        </p>
+                    </div>
+                </div>
+                <div class="menu__line"></div>
+            </div>
+            <img src="img/menu-img.png" class="menu__img" alt="">
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <img src="img/quotation-marks.svg" class="quotation-marks" alt="">
+                            <h1>
+                                Goede service, lekker eten, toffe ambiance
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et
+                                justo duo dolores et ea rebum. Stetclita kasd gubergren.
+                            </p>
+                            <h2>
+                                ALAIN HEYNDRICKX
+                            </h2>
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/quotation-marks.svg" class="quotation-marks" alt="">
+                            <h1>
+                                Goede service, lekker eten, toffe ambiance
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et
+                                justo duo dolores et ea rebum. Stetclita kasd gubergren.
+                            </p>
+                            <h2>
+                                ALAIN HEYNDRICKX
+                            </h2>
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/quotation-marks.svg" class="quotation-marks" alt="">
+                            <h1>
+                                Goede service, lekker eten, toffe ambiance
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et
+                                justo duo dolores et ea rebum. Stetclita kasd gubergren.
+                            </p>
+                            <h2>
+                                ALAIN HEYNDRICKX
+                            </h2>
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/quotation-marks.svg" class="quotation-marks" alt="">
+                            <h1>
+                                Goede service, lekker eten, toffe ambiance
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et
+                                justo duo dolores et ea rebum. Stetclita kasd gubergren.
+                            </p>
+                            <h2>
+                                ALAIN HEYNDRICKX
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="slider__control slider__control_prev" role="button" data-slide="prev">
+                    <img src="img/arrow-left.svg" alt="">
+                </a>
+                <a href="#" class="slider__control slider__control_next" role="button" data-slide="next">
+                    <img src="img/arrow-right.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="block__fixed" class="block__fixed"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // инициализация слайдера
+            var slider = new SimpleAdaptiveSlider('.slider', {
+                autoplay: false,
+                interval: 5000,
+                swipe: true,
+            });
+        });
+    </script>
+    <script defer src="js/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
